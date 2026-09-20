@@ -44,7 +44,22 @@ function closeImage() {
 </body>
 </html>
 <style>
+body {
+    margin: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+/* スマホ用 */
+@media (max-width: 600px) {
+    body {
+        background-image: url("background2.jpg");
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
 body {
     margin: 0;
     background-image: url("background.jpg");
